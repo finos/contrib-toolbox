@@ -1,0 +1,9 @@
+certs
+root
+users
+legal-report/build
+legal-report/checkout
+legal-report/*.pyc
+legal-report/report.html
+legal-report/reports
+legal-report/legal_report_config.yaml

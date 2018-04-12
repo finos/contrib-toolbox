@@ -1,0 +1,117 @@
+github_orgs:
+  maoo:
+    bot-unfurl:
+  symphonyoss:
+    extension-api-angular-service:
+    RestApiClient:
+    bot-bot:
+    bot-butler:
+    bot-fact:
+    bot-faq:
+    bot-greenhouse:
+    bot-home-security-talking:
+    bot-jenkins:
+    bot-jira:
+    bot-lunch-box:
+    bot-room-manager:
+    bot-sidekick:
+    bot-sym-browser:
+    bot-twilio:
+    bot-v-for-symphony:
+    bot-woodhouse:
+    certificate-toolbox:
+    clj-symphony:
+    contrib-toolbox:
+    embedding-api-examples:
+    extension-api-examples:
+    helpdesk-bot:
+    hubot-symphony:
+    ssf-enforcer-rules:
+    ssf-jar-resource-bundle:
+    ssf-parent-pom:
+    symphony-java-client:
+    symphony-java-sample-bots:
+
+preserve_downloads: true
+
+output_format: html
+
+output: ./reports
+
+execute_commands:
+  - '[[ -f "pom.xml" ]] && mvn clean project-info-reports:dependencies'
+  - '[[ -f "project.clj" ]] && lein licenses :csv > license-report.csv'
+  - '[[ -f "package.json" ]] && license-report --output=table > license-report.txt'
+
+# Not needed, assuming we scan public repos only
+github_token:
+
+github_checkout_folder: ./checkout
+
+# Only scan master, don't fetch branches
+master_only: true
+
+excluded_files_list:
+  - .*.jar
+  - .*.classpath
+  - .*.project
+  - .*README.*
+  - .*node\_modules
+  - .*.sln
+  - .*.csproj
+  - .*.json
+  - .*\.git
+  - .*\.svn
+  - .*NOTICE.*
+  - .*LICENSE.*
+
+category_b_licenses:
+  - CDDL
+  - Common Development and Distribution License
+  - CDDL 1.0
+  - CDDL 1.1
+  - Common Public License
+  - CPL 1.0
+  - Eclipse Public License
+  - EPL 1.0
+  - IBM Public License
+  - IPL 1.0
+  - Mozilla Public License
+  - MPL 1.0
+  - MPL 1.1
+  - MPL 2.0
+  - Sun Public License
+  - SPL 1.0
+  - Open Software License 3.0
+  - Erlang Public License
+  - UnRAR License
+  - SIL Open Font License
+  - Ubuntu Font License Version 1.0
+  - IPA Font License Agreement v1.0
+  - Creative Commons Attribution
+  - CC-A 2.5
+  - CC-A 3.0
+  - CC-A 4.0
+  - Ruby License
+
+category_x_licenses:
+  - All rights reserved
+  - Binary Code License (BCL)
+  - GNU GPL 1
+  - GNU GPL 2
+  - GNU GPL 3
+  - GNU LGPL 2
+  - GNU LGPL 2.1
+  - GNU LGPL 3
+  - Affero GPL 3
+  - NPL 1.0
+  - NPL 1.1
+  - QPL
+  - Sleepycat License
+  - Microsoft Limited Public License
+  - Code Project Open License
+  - CPOL
+
+license_file_matches:
+  - http://www.apache.org/licenses
+  - Version 2.0, January 2004

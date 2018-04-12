@@ -1,0 +1,14 @@
+<html lang="en">
+    <head>
+        <title>json tree example</title>
+        <link href="https://cdn.rawgit.com/lmenezes/json-tree/master/css/jsontree.css" rel="stylesheet">
+        <script src="https://cdn.rawgit.com/lmenezes/json-tree/master/src/jsontree.js"></script>
+    </head>
+    <body>
+      <div id="projects"/>
+    </body>
+    <script>
+    var json = {{JSON_VAR}};
+    document.getElementById("projects").innerHTML = JSONTree.create(json);
+    </script>
+</html>
