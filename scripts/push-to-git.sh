@@ -56,6 +56,10 @@ if [[ -z "$FILES_TO_PUSH" ]]; then
   export FILES_TO_PUSH="*"
 fi
 
+if [[ -z "$COMMIT_MESSAGE" ]]; then
+  export COMMIT_MESSAGE="$GIT_USER_NAME is pushing $FILES_TO_PUSH $COMMIT_MESSAGE_EXTRA"
+fi
+
 setup_git() {
   git config --global user.email $GIT_USER_EMAIL >/dev/null
   git config --global user.name $GIT_USER_NAME >/dev/null
@@ -79,7 +83,7 @@ push_files() {
   cp -rf ../${FILES_TO_PUSH} .
 
   git add $FILES_TO_PUSH
-  git commit -q -m "$GIT_USER_NAME is pushing $FILES_TO_PUSH $COMMIT_MESSAGE_EXTRA"
+  git commit -q -m "$COMMIT_MESSAGE"
   git push -q -u origin $GIT_BRANCH >/dev/null
   echo "Pushed changes into remote git repo"
 }
