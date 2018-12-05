@@ -31,6 +31,7 @@
 # - SKIP_OC_INSTALL - The Openshift Online token
 # - OC_DELETE_LABEL - If set, it will trigger a 'oc deleta all -l <OC_DELETE_LABEL>; defaults to null'
 # - OC_TOKEN - The Openshift Online token; supports branch override
+# - OC_TOKEN_FILE - A local file that contains the Openshift Online token; this var takes precedence over OC_TOKEN
 # - OC_TEMPLATE_PROCESS_ARGS - Comma-separated list of env vars to pass to the OC template (ie "BOT_NAME,S2I_IMAGE")
 # - OC_ENDPOINT - OpenShift server endpoint; defaults to https://api.starter-us-east-1.openshift.com
 # - OC_PROJECT_NAME - The Openshift Online project to use; default is botfarm; supports branch override
@@ -124,6 +125,10 @@ if [[ "$SKIP_OC_INSTALL" != "true" ]]; then
 
   # Download and unpack oc
   curl -Ls $OC_URL | tar xvz
+fi
+
+if [[ -f "$OC_TOKEN_FILE" ]]; then
+  OC_TOKEN=`cat $OC_TOKEN_FILE`
 fi
 
 # Log into Openshift Online and use project botfarm
