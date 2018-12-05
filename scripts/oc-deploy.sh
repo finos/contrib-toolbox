@@ -69,7 +69,7 @@ get_branch_var "OC_TOKEN"
 OC_TOKEN=${VAR_VALUE}
 # Fail if no mandatory vars are missing
 if [[ -z "$OC_TOKEN" && -z "$OC_TOKEN_FILE" ]]; then
-  echo "Missing OC_TOKEN. Failing."
+  echo "Missing OC_TOKEN or OC_TOKEN_FILE. Failing."
   exit -1
 fi
 
