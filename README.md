@@ -10,3 +10,19 @@ Available items:
 - Legal reports
   - [ssf_legal_report](legal-report/) is a Python script that generates a project report validating the [Foundation legal requirements](https://symphonyoss.atlassian.net/wiki/display/FM/Legal+Requirements)
 - [validate-license-source.sh](validate-license-source.sh) is the deprecated version of `ssf_legal_report`
+
+## Contributing
+
+1. Fork it (<https://github.com/finos-fdx/contrib-toolbox/fork>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Read our [contribution guidelines](.github/CONTRIBUTING.md) and [Community Code of Conduct](https://www.finos.org/code-of-conduct)
+4. Commit your changes (`git commit -am 'Add some fooBar'`)
+5. Push to the branch (`git push origin feature/fooBar`)
+6. Create a new Pull Request
+
+## License
+
+The code in this repository is distributed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+
+Copyright 2016-2018 The Symphony Software Foundation
+Copyright 2018-2019 FINOS
