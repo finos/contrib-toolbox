@@ -24,7 +24,7 @@
   <g fill="#fff" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11" text-anchor="middle">
     <text fill="#010101" fill-opacity=".3" x="34.5" y="15">FINOS</text>
     <text x="34.5" y="14">FINOS</text>
-    <text fill="#010101" fill-opacity=".3" x="82.5" y="15">released</text>
-    <text x="82.5" y="14">released</text>
+    <text fill="#010101" fill-opacity=".3" x="82.5" y="15">active</text>
+    <text x="82.5" y="14">active</text>
   </g>
 </svg>
