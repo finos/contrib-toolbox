@@ -26,3 +26,5 @@ The code in this repository is distributed under the [Apache License, Version 2.
 
 Copyright 2016-2018 The Symphony Software Foundation
 Copyright 2018-2019 FINOS
+
+SPDX-License-Identifier: [Apache-2.0](https://spdx.org/licenses/Apache-2.0)
