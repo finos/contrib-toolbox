@@ -1,3 +1,6 @@
+| NOTE! This project is not active anymore, therefore marked as ARCHIVED; if you're interested to become the maintener of this project, open an issue or email help@finos.org . |
+| --- |
+
 # Contribution Toolbox
 
 A collection of scripts and other tools used internally by the Symphony Software Foundation to automate [project lifecycle](https://symphonyoss.atlassian.net/wiki/display/FM/Project+Lifecycle) validations and transitions.
