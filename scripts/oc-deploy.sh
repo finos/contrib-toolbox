@@ -145,8 +145,8 @@ fi
 get_branch_var "OC_DELETE_LABEL"
 OC_DELETE_LABEL=${VAR_VALUE}
 if [[ -n "$OC_DELETE_LABEL" ]]; then
-  oc delete all -l $OC_DELETE_LABEL
-  echo "Deleted all resources with label $OC_DELETE_LABEL ; ; sleeping 10 secs ..."
+  oc delete all -l ${OC_DELETE_LABEL}
+  echo "Deleted all resources with label ${OC_DELETE_LABEL} , sleeping 10 secs ..."
   sleep 10
 fi
 
