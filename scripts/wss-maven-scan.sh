@@ -4,8 +4,8 @@
 # It accepts a GitHub org and repository name as input, and excepts an environment
 # variable called WSS_API_KEY to connect with WSS servers.
 
-# How to run: ./wss-maven-scan.sh <org name> <repo name>
-# Example: ./wss-maven-scan.sh rh-mercury product-eligibility-DMN
+# How to run:
+# WSS_API_KEY="xxx" curl -L https://raw.githubusercontent.com/finos/contrib-toolbox/master/scripts/wss-maven-scan.sh | bash -s -- finos <FINOS Repo Name>
 
 ORG_NAME=$1
 PROJECT_NAME=$2
