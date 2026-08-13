@@ -6,18 +6,18 @@ This file lists the maintainers of this repository.
 
 | GitHub Username | Name | Organization | Email |
 |----------------|------|--------------|-------|
-| @ChrisTyree | *please add name* | *please add organization* | *please add email* |
-| @alstratigos | *please add name* | FINOS | *please add email* |
-| @eteridvalishvili | *please add name* | *please add organization* | *please add email* |
+| @ChrisTyree | *please add name* | *please add organization* |  |
+| @alstratigos | *please add name* | FINOS |  |
+| @eteridvalishvili | *please add name* | *please add organization* |  |
 | @grizzwolf | Aaron Griswold | FINOS & The Linux Foundation | aaron.griswold@finos.org |
-| @jgavronsky | *please add name* | *please add organization* | *please add email* |
-| @karlmoll | *please add name* | @finos  | *please add email* |
-| @lucaborella89 | Luca Borella | *please add organization* | *please add email* |
-| @niamhoparker | Niamh Parker | *please add organization* | *please add email* |
-| @smtebbe | *please add name* | *please add organization* | *please add email* |
-| @toshaellison | Tosha Ellison | FINOS | *please add email* |
-| @wendallkaters | Kendall Waters Perez | Linux Foundation | *please add email* |
-| @winmorgan | Win Morgan | *please add organization* | *please add email* |
+| @jgavronsky | *please add name* | *please add organization* |  |
+| @karlmoll | *please add name* | @finos  |  |
+| @lucaborella89 | Luca Borella | *please add organization* |  |
+| @niamhoparker | Niamh Parker | *please add organization* |  |
+| @smtebbe | *please add name* | *please add organization* |  |
+| @toshaellison | Tosha Ellison | FINOS |  |
+| @wendallkaters | Kendall Waters Perez | Linux Foundation |  |
+| @winmorgan | Win Morgan | *please add organization* |  |
 
 For information about maintainer responsibilities and resources, see the [FINOS Maintainers Cheatsheet](https://community.finos.org/docs/finos-maintainers-cheatsheet).
 
